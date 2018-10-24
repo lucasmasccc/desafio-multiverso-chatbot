@@ -1,0 +1,168 @@
+@import url('animation.css');
+@import url('https://fonts.googleapis.com/css?family=Text+Me+One');
+@import url('https://fonts.googleapis.com/css?family=Erica+One');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, .3);
+    background-color: #afb184;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container-home {
+    margin: 0;
+    padding: 0;
+    background: url('assets/back2.jpg') #fff;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container-about {
+    background-color: #61d8ff;
+}
+
+#begin {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    margin-top: -58;
+}
+
+#about {
+    min-width: 100%;
+    min-height: 75vh;
+}
+
+.initial {
+    margin-top: 10%;
+}
+
+.navbar,
+.subtitle {
+    font-family: 'Text Me One', sans-serif;
+}
+
+.img-logo {
+    margin-right: 0.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    text-align: center;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    /* text-shadow: -3px -1px 3px #736b3c; */
+}
+
+h1,
+.about {
+    font-family: 'Text Me One', sans-serif;
+    font-size: 3.5rem;
+    /* color: #31281e; */
+}
+
+.about {
+    padding: 0 30px;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #50c99c !important;
+    border-color: #28a745 !important;
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: #00836b !important;
+    border-color: #1e7e34 !important;
+}
+
+.bg-primary {
+    background-color: #61d8ff!important;
+}
+
+.about {
+    color: white;
+    font-size: 1.9rem;
+}
+
+.container-about--info {
+    display: flex;
+}
+
+.card-box {
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    /* Opera/IE 8+ */
+    padding: 20px;
+    min-height: 30%;
+    border: 1px solid white;
+    border-radius: 20px;
+    align-items: stretch;
+    margin-top: 20px;
+}
+
+.logo-about {
+    width: 15%;
+    border: 5px solid white;
+    border-radius: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.finn {}
+
+.jake {}
+
+.about.row {}
+
+.lucas-lucas {}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 25vh;
+    background-image: url('./assets/footer.jpg');
+    background-size: cover;
+    background-repeat: repeat-x;
+}
+
+.redes-sociais i:hover {
+    color: #065a86;
+    cursor: pointer;
+}
