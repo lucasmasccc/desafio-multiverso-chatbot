@@ -1,4 +1,4 @@
-## Running locally
+## Rodar a aplicação local
 
 1. Instalar as dependencias
 
@@ -7,7 +7,7 @@
     npm install
     ```
 
-2. Ativar a aplicação
+2. Rodar a aplicação
 
     ```
     npm start
