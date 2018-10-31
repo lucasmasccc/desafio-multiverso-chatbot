@@ -7,7 +7,7 @@
     npm install
     ```
 
-2. Run the application
+2. Ativar a aplicação
 
     ```
     npm start
