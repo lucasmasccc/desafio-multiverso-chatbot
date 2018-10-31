@@ -1,3 +1,42 @@
-<p>
-  chat works!
-</p>
+<div id="about" class="container container-about">
+    <div class="row">
+        <div class="col-md-3 land animated slideInLeft">
+            O criador está congelado, use o BMO ao lado e faça perguntas ao Finn que o ajudarão a encontra-ló e por fim descongelá-lo e salvar assim a Terra de Ooo. Só escrever e apertar Enter a vontade!
+        </div>
+        <div class="col-md-9 bmo-out row animated slideInRight">
+            <div class="col-12 bmo-body row">
+                <div #scrollMe class="col-12 bmo-visor">
+                    <div *ngFor='let sentenca of sentencas'>
+                        <div *ngIf="sentenca.watson" class="setenca-waston animated bounceIn">
+                            <div class="bmo-visor--img">
+                                <img class="bmo-visor--finn" src="../../assets/finn_chat_image.jpg" alt="Finn">
+                            </div>
+                            <span class="setence-text">{{sentenca?.texto}}</span>
+                        </div>
+                        <div *ngIf="!sentenca.watson" class="setenca-waston animated bounceIn bmo">
+                            <div class="bmo-visor--img">
+                                <img class="bmo-visor--bmo" src="../../assets/bmo_logo_chat.png" alt="Finn">
+                            </div>
+                            <span class="setence-text">{{sentenca?.texto}}</span>
+                        </div>
+                    </div>
+                    <div class="col-12 m-2" *ngIf="carregando" class="loading animated flash">Finn está digitando uma mensagem <img class="ml-2" src="../../assets/loading.svg">
+                    </div>
+                    <div class="col-12 m-2" *ngIf="error" class="loading animated bounceIn">Parece que o fim precisou sair para a batalha, tente novamente mais tarde. <img style="margin-top: -0.2rem;" class="ml-2" width="20" height="20" src="../../assets/error.png">
+                    </div>
+                </div>
+                <div class="col-8 inputs">
+                    <input id="inputMsg" (keydown.enter)="sendMessage(mensagem)" type="text" [(ngModel)]="mensagem" class="form-control" placeholder="Digite aqui uma mensagem para Finn" aria-label="mensagem" aria-describedby="basic-addon1">
+                </div>
+                <div class="col-2 inputs text-center">
+                    <span id="clickStart" (click)="startAgain(mensagem)" class="dot" placement="top" ngbTooltip="Recomeçar a conversa"></span>
+                </div>
+                <div class="col-2 inputs">
+                    <img id="limpar" (click)="clearSentences()" class="arrow" placement="top" ngbTooltip="Apagar as mensagens" src="../../assets/1x/triangulo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+</div>
