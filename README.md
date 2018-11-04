@@ -37,7 +37,7 @@ O canal utilizado como interface para o chatbot deve ser uma aplicação Web. Su
 - Não se aplica.
 
 ### BUILD E EXECUÇÃO
-#Chatbot Client Side
+# Chatbot Client Side
 ## Running locally
 
 É necessário ter instalado na sua máquina:
@@ -58,7 +58,7 @@ O canal utilizado como interface para o chatbot deve ser uma aplicação Web. Su
 
 Observação: Caso tenha mudado a porta no Server.js do Server será necessário mudar a porta também no ChatService.
 
-#Chatbot Server Side
+# Chatbot Server Side
 ## Running locally
 
 É necessário ter instalado na sua máquina:
@@ -81,7 +81,7 @@ Observação: Caso der algum erro de porta, e se for necessário trocar o númer
 
 Acesse a aplicação por http://localhost:4200
 
-#Informações do Criador
+# Informações do Criador
 Lucas Mascarenhas Lauro da Silva
 e-mail: lucasmasc.cc@gmail.com
 
