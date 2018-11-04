@@ -337,3 +337,31 @@ h1,
     justify-content: center;
     font-size: x-small;
 }
+
+.rei-gelado {
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: -10%;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.rei-gelado--texto {
+    font-size: medium;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Text Me One', sans-serif;
+}
+
+.link {
+    cursor: pointer;
+    font-weight: bold;
+    color: #1f998c;
+}
+
+.link:hover {
+    color: #1f998c !important;
+}

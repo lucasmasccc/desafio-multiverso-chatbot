@@ -1,9 +1,9 @@
 <div id="about" class="container container-about">
     <div class="row">
-        <div class="col-md-3 land animated slideInLeft">
+        <div *ngIf="closed" class="col-md-3 land animated slideInLeft">
             O criador está congelado, use o BMO ao lado e faça perguntas ao Finn que o ajudarão a encontra-ló e por fim descongelá-lo e salvar assim a Terra de Ooo. Só escrever e apertar Enter a vontade!
         </div>
-        <div class="col-md-9 bmo-out row animated slideInRight">
+        <div *ngIf="closed" class="col-md-9 bmo-out row animated slideInRight">
             <div class="col-12 bmo-body row">
                 <div #scrollMe class="col-12 bmo-visor">
                     <div *ngFor='let sentenca of sentencas'>
@@ -40,3 +40,35 @@
 </div>
 <div class="footer">
 </div>
+
+<ng-template #reiGelado>
+    <div class="modal-header">
+        <button type="button" class="close pull-right" aria-label="Close" (click)="closeModalInicial()">
+              <span aria-hidden="true">&times;</span>
+            </button>
+    </div>
+    <div class="modal-body container">
+        <div class="row">
+            <div class="col-6 rei-gelado align-self-center">
+                <img src="../../assets/ice-king.png" alt="">
+            </div>
+            <div class="col-12 rei-gelado--texto">Parece que o rei gelado conseguiu capturar e congelar o criador da Terra de Ooo. Só você pode salvá-lo. Use o chatbot e descubra como resgatar o guerreiro-criador!</div>
+        </div>
+    </div>
+</ng-template>
+
+<ng-template #descongelado>
+    <div class="modal-header">
+        <button type="button" class="close pull-right" aria-label="Close" (click)="closeSegundoModal()">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+    </div>
+    <div class="modal-body container">
+        <div class="row">
+            <div style="margin-left: 34%;" class="col-6 rei-gelado align-self-center">
+                <img src="../../assets/lucas-desenho.PNG" alt="">
+            </div>
+            <div class="col-12 rei-gelado--texto">Você conseguiu descobrir tudo sobre o criador! <a class="link" (click)="fecharModalAbrirLink()">Clique aqui</a> para descobrir mais ou feche esse janela para continuar sua conversando com o Finn</div>
+        </div>
+    </div>
+</ng-template>

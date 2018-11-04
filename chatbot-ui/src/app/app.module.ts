@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ChatService } from './services/chat.service';
 import { FormsModule } from '@angular/forms';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     NgbModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ModalModule.forRoot(),
   ],
   providers: [ChatService],
   bootstrap: [AppComponent]
