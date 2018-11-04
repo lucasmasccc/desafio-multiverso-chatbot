@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <div class="col-8 inputs">
-                    <input id="inputMsg" (keydown.enter)="sendMessage(mensagem)" type="text" [(ngModel)]="mensagem" class="form-control" placeholder="Digite aqui uma mensagem para Finn" aria-label="mensagem" aria-describedby="basic-addon1">
+                    <input [disabled]="carregando" id="inputMsg" (keydown.enter)="sendMessage(mensagem)" type="text" [(ngModel)]="mensagem" class="form-control" placeholder="Digite aqui uma mensagem para Finn" aria-label="mensagem" aria-describedby="basic-addon1">
                 </div>
                 <div class="col-2 inputs text-center">
                     <span id="clickStart" (click)="startAgain(mensagem)" class="dot" placement="top" ngbTooltip="Recomeçar a conversa"></span>
