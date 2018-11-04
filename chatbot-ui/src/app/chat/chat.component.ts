@@ -79,19 +79,17 @@ export class ChatComponent implements OnInit {
   }
 
   checkEndGame(response: any){
-    if(response.entities !== [] && response.entities[0] !== undefined ){
-      if(response.entities[0].entity === "nome"){
+    console.log(response);
+    if(response.intents !== [] && response.intents[0] !== undefined){
+      if(response.intents[0].intent  === "qualoseunome"){
         this.arrayIntent[0] = true;
       }
-      if(response.entities[0].entity === "idade"){
+      if(response.intents[0].intent  === "QualasuaIdade"){
         this.arrayIntent[1] = true;
       }
-      if(response.entities[0].entity === "batalhaxp"){
+      if(response.intents[0].intent  === "CombateExp"){
         this.arrayIntent[2] = true;
       }
-    }
-    if(response.intents !== [] && response.intents[0] !== undefined){
-
       if(response.intents[0].intent === "Resumodoguerreiro"){
         this.arrayIntent[3] = true;
       }
