@@ -79,4 +79,6 @@ Observação: Caso tenha mudado a porta no Server.js do Server será necessário
 
 Observação: Caso der algum erro de porta, e se for necessário trocar o número da porta, se faz necessário trocar também a URL do ChatService no Cliente. 
 
+Acesse a aplicação por http://localhost:4200
+
 
