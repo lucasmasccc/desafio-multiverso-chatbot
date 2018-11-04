@@ -37,9 +37,48 @@ O canal utilizado como interface para o chatbot deve ser uma aplicação Web. Su
 - Não se aplica.
 
 ### BUILD E EXECUÇÃO
-- Envie as instruções para execução da interface e não esqueça das credenciais do Watson. Cuidado com dependências externas não mapeadas que inviabilizem ou dificultem essas atividades.
-- De preferência, utilize um ferramenta como npm ou yarn para realizar as tarefas necessárias de build.
-- Caso deseje, personalize a interface e mostre que tem criatividade (+)
+#Chatbot Client Side
+## Running locally
+
+É necessário ter instalado na sua máquina:
+- NodeJS, NPM e Angular/Cli
+
+1. Install the dependencies
+
+    ```
+    cd /chatbot-ui
+    npm install
+    ```
+
+2. Run the application
+
+    ```
+    npm start
+    ```
+
+Observação: Caso tenha mudado a porta no Server.js do Server será necessário mudar a porta também no ChatService.
+
+#Chatbot Server Side
+## Running locally
+
+É necessário ter instalado na sua máquina:
+- Node e NPM
+
+1. Install the dependencies
+
+    ```
+    cd /chatbot-service
+    npm install
+    ```
+
+2. Run the application
+
+    ```
+    npm start
+    ```
+
+Observação: Caso der algum erro de porta, e se for necessário trocar o número da porta, se faz necessário trocar também a URL do ChatService no Cliente. 
+
+Acesse a aplicação por http://localhost:4200
 
 
-# BOA SORTE!
