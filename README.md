@@ -82,6 +82,6 @@ Observação: Caso der algum erro de porta, e se for necessário trocar o númer
 Acesse a aplicação por http://localhost:4200
 
 # Informações do Criador
-Lucas Mascarenhas Lauro da Silva
-e-mail: lucasmasc.cc@gmail.com
+- Lucas Mascarenhas Lauro da Silva
+- e-mail: lucasmasc.cc@gmail.com
 
